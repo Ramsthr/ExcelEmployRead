@@ -72,6 +72,7 @@ public class ShiftRecord {
     public String getFileId() {
         return fileId;
     }
+
     public String getName() {
         return name;
     }

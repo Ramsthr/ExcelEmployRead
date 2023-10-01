@@ -24,7 +24,7 @@ public class ShiftLedger {
      */
     @Nullable
     public List<ShiftRecord> getRecordsWithUptime(final int uptime) {
-        int upTimeInMin=uptime*60;
+        int upTimeInMin = uptime * 60;
         List<ShiftRecord> recordsWithUptime = new ArrayList<>();
         if (!this.shiftRecordsMap.isEmpty()) {
             for (List<ShiftRecord> shiftRecordList : this.shiftRecordsMap.values()) {
@@ -79,6 +79,7 @@ public class ShiftLedger {
 
     /**
      * who have less than maxHours hours of time between shifts but greater than minHours hour by Approach1
+     *If any FileData that contains time between shift difference is greater than maxHours and time between shift difference is lesser than minHours is considerable than it brakes from list of {@link ShiftRecord}
      * @param maxHours maxHours
      * @param minHours minHours
      * @return returns List of {@link ShiftRecord }
@@ -97,8 +98,8 @@ public class ShiftLedger {
                             long diff = startDate.getTime() - endpreviousdate.getTime();
                             diff = diff / 3600000;
                             if (diff < maxHours && diff > minHours) {
-                               timeBetweenShiftApr1.add(shiftRecord);
-                               break;
+                                timeBetweenShiftApr1.add(shiftRecord);
+                                break;
                             }
                         }
                         if (endDate != null) {
@@ -115,6 +116,7 @@ public class ShiftLedger {
 
     /**
      * who have less than maxHours hours of time between shifts but greater than minHours hour by Approach2
+     *If any FileData that contains time between shift difference is greater than maxHours and time between shift difference is lesser than minHours is not considerable
      * @param maxHours maxHours
      * @param minHours minHours
      * @return returns List of {@link ShiftRecord }
@@ -157,11 +159,11 @@ public class ShiftLedger {
     /**
      * prints data in console from List of {@link ShiftRecord}
      * @param shiftRecords List of {@link ShiftRecord}
-     * @param string String for message
+     * @param string       String for message
      */
-    public  void prints(List<ShiftRecord> shiftRecords,String string) {
+    public void prints(List<ShiftRecord> shiftRecords, String string) {
         for (ShiftRecord shiftRecord : shiftRecords) {
-            System.out.println(string + " :- " +shiftRecord.getName());
+            System.out.println(string + " :- " + shiftRecord.getName());
         }
     }
 }

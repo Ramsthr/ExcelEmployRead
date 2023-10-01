@@ -16,18 +16,17 @@ public class ExcelMap {
      * constructor of {@link ExcelMap} which takes parameter as string path of Excel file  and fetch sheet from it.
      * @param inputFile inputFile as String
      */
-    ExcelMap(String inputFile){
+    ExcelMap(String inputFile) {
         this.inputFile = inputFile;
         this.sheet = sheetData();
     }
-
 
 
     /**
      * returns sheet from user input Excel file
      * @return returns {@link Sheet} sheet
      */
-    private Sheet sheetData()  {
+    private Sheet sheetData() {
         Sheet sheet = null;
         try {
             File inputWorkbook = new File(inputFile);
@@ -45,9 +44,9 @@ public class ExcelMap {
     /**
      * returns uptime in minute
      * @param row row number
-     * @return  int value of total time in minute
+     * @return int value of total time in minute
      */
-    private int upTimeCalculate( Row row) {
+    private int upTimeCalculate(Row row) {
         String uptime = row.getCell(4).toString();
         int h = 0;
         int m = 0;
@@ -65,7 +64,7 @@ public class ExcelMap {
 
     /**
      * Extracts date from cell and returns
-     * @param row row position
+     * @param row        row position
      * @param cellNumber cell number where to fetch date
      * @return {@link Date}
      */
