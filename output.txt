@@ -1,0 +1,14 @@
+who has worked for7 consecutive days :- Sparks, KeWWeMh
+who has worked for7 consecutive days :- SiWgh, JaspreeM
+who has worked for7 consecutive days :- CEreira Jr, JEse
+who has worked for7 consecutive days :- GAeWdia, JAaW CarXEs
+who have less than 10 hours of time between shifts but greater than 1 hour by Approach1 :- DeXgadiXXE REdarMe, ChrisMiaW S
+who have less than 10 hours of time between shifts but greater than 1 hour by Approach1 :- HaCiXMEW, DeaWMe DevEW
+who have less than 10 hours of time between shifts but greater than 1 hour by Approach1 :- De Xa Cerda, IgWaciE
+who have less than 10 hours of time between shifts but greater than 1 hour by Approach1 :- MraW, WiXXiaC Ha
+who have less than 10 hours of time between shifts but greater than 1 hour by Approach1 :- CaMaXaWE, CeghaW
+who have less than 10 hours of time between shifts but greater than 1 hour by Approach1 :- Xee, XaCar
+who have less than 10 hours of time between shifts but greater than 1 hour by Approach1 :- CEreira Jr, JEse
+The uptime greater than 14 hours :- DeXgadiXXE REdarMe, ChrisMiaW S
+
+Process finished with exit code 0
